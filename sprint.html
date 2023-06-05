@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sprint3</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", function() {
+
+        var tituloElemento = document.getElementById("titulo");
+        tituloElemento.textContent = "Amigos";
+
+
+        var corpoElemento = document.getElementById("corpo");
+        corpoElemento.addEventListener("click", function() {
+          alert("opa");
+        });
+
+    var listaDeAmigos = ["Amigo 1", "Amigo 2", "Amigo 3", "Amigo 4", "Amigo 5"];
+
+
+var tituloElemento = document.getElementById("titulo");
+tituloElemento.textContent = "Amigos";
+
+
+var corpoElemento = document.getElementById("corpo");
+corpoElemento.addEventListener("click", function() {
+  alert("opa");
+});
+
+var listaAmigosElemento = document.getElementById("lista-amigos");
+listaDeAmigos.forEach(function(amigo) {
+  var itemLista = document.createElement("li");
+  itemLista.textContent = amigo;
+  listaAmigosElemento.appendChild(itemLista);
+});
+});
+    </script>
+  </head>
+  <body>
+    <header class='topo'>
+      <h1 id="titulo">Amigos</h1>
+    </header>
+    <main>
+      <section style="width: 100%;">
+        <div id="corpo">
+          <div class="sessao_conteudo">
+            <h3>Solicitacoes</h3>
+          </div>
+        </div>
+        <div id="conta2">
+          <div class="cont2">
+            <h3>lista de amigos</h3>
+          </div>
+        </div>
+        <div id="conta3">
+          <div class="cont3">
+            <h3>Minha lista</h3>
+          </div>
+        </div>
+        <div id="conta4">
+          <div class="cont4">
+            <h3>ajuda</h3>
+          </div>
+        </div>
+        <div id="conta5">
+          <div class="cont5">
+            <h3>series dos seus amigos</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
